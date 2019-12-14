@@ -54,6 +54,12 @@
       ],
       "automerge": true,
       "automergeType": "branch"
+    },
+    {
+      "sourceUrlPrefixes": [
+        "https://github.com/FasterXML/jackson"
+      ],
+      "groupName": "jackson packages"
     }
   ],
   "pin": {
