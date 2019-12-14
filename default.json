@@ -1,0 +1,68 @@
+{
+  "extends": ["config:base"],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "major": {
+    "automerge": false
+  },
+  "masterIssue": true,
+  "packageRules": [
+    {
+      "packageNames": [
+        "boto3",
+        "aws-sdk"
+      ],
+      "packagePatterns": [
+        "^com.amazonaws:java-sdk-"
+      ],
+      "extends": ["schedule:monthly"]
+    },
+    {
+      "packageNames": [
+        "@capraconsulting/sentry-utils-js",
+        "@capraconsulting/validation-utils-js",
+        "autoprefixer",
+        "black",
+        "flake8",
+        "http-server",
+        "jest-each",
+        "jest",
+        "prettier",
+        "semantic-release",
+        "testcafe",
+        "ts-jest",
+        "ts-node",
+        "typescript",
+        "webpack-cli",
+        "webpack-dev-server",
+        "webpack"
+      ],
+      "packagePatterns": [
+        "^@types/",
+        "^@typescript-eslint/",
+        "^tslint",
+        "^eslint",
+        "-loader$",
+        "-webpack-plugin$",
+        "^react",
+        "^rollup"
+      ],
+      "excludePackageNames": [
+        "react-datepicker",
+        "react-table"
+      ],
+      "automerge": true,
+      "automergeType": "branch"
+    }
+  ],
+  "pin": {
+    "automerge": true
+  },
+  "prCreation": "not-pending",
+  "prNotPendingHours": 2,
+  "schedule": ["before 6am", "every weekend"],
+  "semanticCommits": true,
+  "stabilityDays": 3,
+  "timezone": "Europe/Oslo"
+}

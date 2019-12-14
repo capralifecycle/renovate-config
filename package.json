@@ -1,0 +1,14 @@
+{
+  "name": "renovate-config",
+  "version": "0.0.0-development",
+  "description": "Renovate config presets for some Capra projects.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capraconsulting/renovate-config.git"
+  },
+  "author": "Capra Consulting",
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "ajv-cli": "^3.0.0"
+  }
+}
