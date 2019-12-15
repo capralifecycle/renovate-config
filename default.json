@@ -29,6 +29,8 @@
         "jest-each",
         "jest",
         "prettier",
+        "react",
+        "react-dom",
         "semantic-release",
         "testcafe",
         "ts-jest",
@@ -45,12 +47,7 @@
         "^eslint",
         "-loader$",
         "-webpack-plugin$",
-        "^react",
         "^rollup"
-      ],
-      "excludePackageNames": [
-        "react-datepicker",
-        "react-table"
       ],
       "automerge": true,
       "automergeType": "branch"
