@@ -56,6 +56,9 @@
       "sourceUrlPrefixes": [
         "https://github.com/FasterXML/jackson"
       ],
+      "packagePatterns": [
+        "^com\\.fasterxml\\.jackson\\.(dataformat|datatype)"
+      ],
       "groupName": "jackson packages"
     }
   ],
