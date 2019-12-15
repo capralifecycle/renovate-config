@@ -53,11 +53,8 @@
       "automergeType": "branch"
     },
     {
-      "sourceUrlPrefixes": [
-        "https://github.com/FasterXML/jackson"
-      ],
       "packagePatterns": [
-        "^com\\.fasterxml\\.jackson\\.(dataformat|datatype)"
+        "^com\\.fasterxml\\.jackson\\."
       ],
       "groupName": "jackson packages"
     }
