@@ -14,7 +14,8 @@
         "aws-sdk"
       ],
       "packagePatterns": [
-        "^com.amazonaws:java-sdk-"
+        "^com.amazonaws:java-sdk-",
+        "^software.amazon.awssdk:"
       ],
       "extends": ["schedule:monthly"]
     },
@@ -54,9 +55,15 @@
     },
     {
       "packagePatterns": [
-        "^com\\.fasterxml\\.jackson\\."
+        "^com.fasterxml.jackson."
       ],
       "groupName": "jackson packages"
+    },
+    {
+      "packagePatterns": [
+        "^software.amazon.awssdk:"
+      ],
+      "groupName": "aws-sdk-java-v2 monorepo"
     }
   ],
   "pin": {
