@@ -73,5 +73,6 @@
   "schedule": ["before 6am", "every weekend"],
   "semanticCommits": true,
   "stabilityDays": 3,
+  "prNotPendingHours": 74,
   "timezone": "Europe/Oslo"
 }
