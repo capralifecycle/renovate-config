@@ -2,7 +2,7 @@
 set -eu -o pipefail
 
 echo "Fetching latest JSON Schema"
-curl -s https://raw.githubusercontent.com/renovatebot/renovate/master/renovate-schema.json > renovate-schema.json
+curl -s https://docs.renovatebot.com/renovate-schema.json > renovate-schema.json
 
 echo "Now validating.."
 echo "Note: The logs for 'keywords ignored' can be ignored."
