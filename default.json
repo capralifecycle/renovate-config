@@ -7,7 +7,6 @@
     "automerge": false
   },
   "masterIssue": true,
-  "masterIssueAutoclose": true,
   "packageRules": [
     {
       "packageNames": [
