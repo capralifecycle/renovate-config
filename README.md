@@ -1,6 +1,6 @@
 # renovate-config
 
-[![Build Status](https://jenkins.capra.tv/buildStatus/icon?job=cals-internal/renovate-config/master)](https://jenkins.capra.tv/job/cals-internal/job/renovate-config/job/master/)
+![Validate](https://github.com/capraconsulting/renovate-config/workflows/Validate/badge.svg)
 
 [Renovate config presets](https://docs.renovatebot.com/config-presets/)
 for some Capra projects.
