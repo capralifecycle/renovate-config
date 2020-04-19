@@ -10,10 +10,18 @@ for a complete list of possible options.
 
 ## Usage
 
+For most code bases - using [`default.json`](./default.json):
+
 ```json
 {
   "extends": ["github>capraconsulting/renovate-config:default"]
 }
 ```
 
-Will use the configuration from `default.json`.
+For libraries - using [`library.json`](./library.json):
+
+```json
+{
+  "extends": ["github>capraconsulting/renovate-config:library"]
+}
+```
