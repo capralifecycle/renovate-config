@@ -74,6 +74,10 @@
       "groupName": "junit5 packages"
     },
     {
+      "sourceUrlPrefixes": ["https://github.com/http4k/http4k"],
+      "groupName": "http4k monorepo"
+    },
+    {
       "description": "Avoid updates such as from 0.20.0 to 0.20.0-1.3.70-eap-274-2",
       "packagePatterns": [
         "^org\\.jetbrains\\.kotlinx:"
