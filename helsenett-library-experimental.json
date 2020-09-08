@@ -19,7 +19,7 @@
         "no.fno.helsenett.libraries:env",
         "no.fno.helsenett.libraries:properties",
         "no.fno.helsenett.libraries:aws-properties",
-        "no.fno.helsenett.libraries:io",
+        "no.fno.helsenett.libraries:io"
       ],
       "automerge": true,
       "automergeType": "branch"
@@ -30,7 +30,7 @@
         "no.fno.helsenett.client-libraries:sqs-sync-client",
         "no.fno.helsenett.client-libraries:reply-poller-sqs-client",
         "no.fno.helsenett.client-libraries:metadata-api-sqs-client",
-        "no.fno.helsenett.client-libraries:insurance-company-client",
+        "no.fno.helsenett.client-libraries:insurance-company-client"
       ],
       "automerge": true,
       "automergeType": "branch"
