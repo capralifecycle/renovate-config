@@ -90,7 +90,7 @@
   },
   "prCreation": "not-pending",
   "schedule": ["before 6am", "every weekend"],
-  "semanticCommits": true,
+  "semanticCommits": "enabled",
   "stabilityDays": 3,
   "prNotPendingHours": 74,
   "timezone": "Europe/Oslo"
