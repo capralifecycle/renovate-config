@@ -83,6 +83,15 @@
         "^org\\.jetbrains\\.kotlinx:"
       ],
       "versioning": "semver"
+    },
+    {
+      "description": "Update internal deps at any time",
+      "packagePatterns": [
+        "^@capraconsulting/",
+        "^@liflig/"
+      ],
+      "schedule": ["at any time"],
+      "stabilityDays": 0
     }
   ],
   "pin": {
