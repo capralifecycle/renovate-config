@@ -88,7 +88,8 @@
       "description": "Update internal deps at any time",
       "packagePatterns": [
         "^@capraconsulting/",
-        "^@liflig/"
+        "^@liflig/",
+        "^no\\.liflig(:|\\.)"
       ],
       "schedule": ["at any time"],
       "stabilityDays": 0
