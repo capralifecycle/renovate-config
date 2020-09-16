@@ -2,16 +2,6 @@
   "extends": [
     "github>capraconsulting/renovate-config:library"
   ],
-  "hostRules": [
-    {
-      "hostType": "maven",
-      "baseUrl": "https://mvnrepo.capraconsulting.no",
-      "username": "renovate",
-      "encrypted": {
-        "password": "CNGypJyNpERqvFAe3F9wcneW5E9f8+VLYlOKsVhxyJPqyfTpUDjdM4QQt3SvCrrinSWLfeXRls8pU1ecjXqYVBrJt72nFtpJt20kBHNCpNHEYCuCuxDzbhTTEqqvMuHH31xvTh7uz3FnNNUqRBTlBoKndI/t+Tfe2clvliWvL+N1tw2GqyvniJ7JQ19kVbYbMac4ejO5cvYfE0No9xJTTULRzJRK4bJOqplPZvutPbrGKuzkjwTTrZ5QDAxxv/mbpzr0kC1R0KoSEz0JIDxy5YrdQm7I4RbP6zrHTt9PDTO6qwwBbpTeobAaAkM1dPNP13AGRozcj44QPwsEs8dBLg=="
-      }
-    }
-  ],
   "packageRules": [
     {
       "packageNames": [
