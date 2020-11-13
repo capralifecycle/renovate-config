@@ -71,6 +71,12 @@
     },
     {
       "packagePatterns": [
+        "^org.testcontainers."
+      ],
+      "groupName": "testcontainers packages"
+    },
+    {
+      "packagePatterns": [
         "^software.amazon.awssdk:"
       ],
       "groupName": "aws-sdk-java-v2 monorepo"
