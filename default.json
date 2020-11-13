@@ -77,6 +77,12 @@
     },
     {
       "packagePatterns": [
+        "^org.jetbrains.kotlinx:kotlinx-serialization-"
+      ],
+      "groupName": "kotlinx-serialization packages"
+    },
+    {
+      "packagePatterns": [
         "^software.amazon.awssdk:"
       ],
       "groupName": "aws-sdk-java-v2 monorepo"
