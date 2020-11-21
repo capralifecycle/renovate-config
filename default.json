@@ -108,7 +108,11 @@
       "groupName": "spek2 packages"
     },
     {
-      "packagePatterns": ["^org.jetbrains.kotlin:"],
+      "packagePatterns": [
+        "^org.jetbrains.kotlin:",
+        "^org.jetbrains.kotlin.\\w+:",
+        "^org.jetbrains.kotlin.plugin.\\w+:"
+      ],
       "groupName": "kotlin packages"
     },
     {
