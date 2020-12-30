@@ -109,6 +109,12 @@
     },
     {
       "packagePatterns": [
+        "^com.slack.api:"
+      ],
+      "groupName": "slack api packages"
+    },
+    {
+      "packagePatterns": [
         "^org.jetbrains.kotlin:",
         "^org.jetbrains.kotlin.\\w+:",
         "^org.jetbrains.kotlin.plugin.\\w+:"
