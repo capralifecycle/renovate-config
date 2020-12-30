@@ -25,3 +25,14 @@ For libraries - using [`library.json`](./library.json):
   "extends": ["github>capraconsulting/renovate-config:library"]
 }
 ```
+
+For aggressive merging - using [`aggressive.json`](./aggressive.json):
+
+```json
+{
+  "extends": ["github>capraconsulting/renovate-config:aggressive"]
+}
+```
+
+This will schedule at any time and automerge as much as possible,
+excluding major updates.
