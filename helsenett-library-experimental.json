@@ -45,9 +45,11 @@
         "^org.http4k:http4k-"
       ],
       "groupName": "http4k monorepo",
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
-      "automergeType": "branch"
+      "automergeType": "branch",
+      "major": {
+        "automerge": false
+      }
     }
   ]
 }
