@@ -12,7 +12,10 @@
         "no.fno.helsenett.libraries:io"
       ],
       "automerge": true,
-      "automergeType": "branch"
+      "automergeType": "branch",
+      "major": {
+        "automerge": false
+      }
     },
     {
       "packageNames": [
@@ -23,14 +26,20 @@
         "no.fno.helsenett.client-libraries:insurance-company-client"
       ],
       "automerge": true,
-      "automergeType": "branch"
+      "automergeType": "branch",
+      "major": {
+        "automerge": false
+      }
     },
     {
       "packageNames": [
         "io.github.microutils:kotlin-logging"
       ],
       "automerge": true,
-      "automergeType": "branch"
+      "automergeType": "branch",
+      "major": {
+        "automerge": false
+      }
     },
     {
       "packagePatterns": [
@@ -38,7 +47,10 @@
       ],
       "groupName": "spek2 monorepo",
       "automerge": true,
-      "automergeType": "branch"
+      "automergeType": "branch",
+      "major": {
+        "automerge": false
+      }
     },
     {
       "packagePatterns": [
@@ -47,7 +59,10 @@
       "groupName": "http4k monorepo",
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
-      "automergeType": "branch"
+      "automergeType": "branch",
+      "major": {
+        "automerge": false
+      }
     }
   ]
 }
