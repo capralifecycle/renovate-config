@@ -9,6 +9,6 @@
   "author": "Capra Consulting",
   "license": "Apache 2.0",
   "devDependencies": {
-    "ajv-cli": "3.3.0"
+    "ajv-cli": "5.0.0"
   }
 }
