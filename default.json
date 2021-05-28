@@ -155,7 +155,7 @@
     {
       "matchSourceUrlPrefixes": ["https://github.com/facebook/jest"],
       "packageNames": ["ts-jest", "@types/jest"],
-      "groupName": "jest monorepo"
+      "groupName": "jest packages"
     }
   ],
   "pin": {
