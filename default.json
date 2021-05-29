@@ -153,9 +153,8 @@
       "stabilityDays": 0
     },
     {
-      "matchSourceUrlPrefixes": ["https://github.com/facebook/jest"],
-      "packageNames": ["ts-jest", "@types/jest"],
-      "groupName": "jest packages"
+      "matchPackageNames": ["ts-jest", "@types/jest"],
+      "groupName": "jest monorepo"
     }
   ],
   "pin": {
