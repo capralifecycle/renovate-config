@@ -1,7 +1,7 @@
 {
   "extends": ["config:base"],
   "lockFileMaintenance": {
-    "enabled": true
+    "enabled": false
   },
   "major": {
     "automerge": false
