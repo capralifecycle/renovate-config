@@ -1,7 +1,7 @@
 {
   "extends": ["config:base"],
   "lockFileMaintenance": {
-    "enabled": true
+    "enabled": false
   },
   "major": {
     "automerge": false
@@ -155,6 +155,11 @@
     {
       "matchPackageNames": ["ts-jest", "@types/jest"],
       "groupName": "jest monorepo"
+    },
+    {
+      "description": "Pin colors package to non-malicious version",
+      "allowedVersions": "<= 1.4.0",
+      "matchPackageNames": ["colors"]
     }
   ],
   "pin": {
