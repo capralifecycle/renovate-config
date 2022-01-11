@@ -160,6 +160,11 @@
       "description": "Pin colors package to non-malicious version",
       "allowedVersions": "<= 1.4.0",
       "matchPackageNames": ["colors"]
+    },
+    {
+      "description": "Pin faker.js package to non-malicious version",
+      "allowedVersions": "<= 5.5.3",
+      "matchPackageNames": ["faker"]
     }
   ],
   "pin": {
