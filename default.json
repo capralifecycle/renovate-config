@@ -153,6 +153,23 @@
       "stabilityDays": 0
     },
     {
+      "description": "Temporarily update liflig-cdk v1 stable versions to alpha versions",
+      "packageNames": ["@liflig/cdk"],
+      "ignoreUnstable": false,
+      "matchCurrentVersion": "/^1\\.[0-9]+\\.[0-9]+$/",
+      "allowedVersions": "/^1\\..*-alpha/",
+      "schedule": ["at any time"],
+      "stabilityDays": 0
+    },
+    {
+      "description": "Temporarily only allow liflig-cdk alpha versions to be updated to other alpha versions",
+      "packageNames": ["@liflig/cdk"],
+      "matchCurrentVersion": "/^1\\..*-alpha/",
+      "allowedVersions": "/^1\\..*-alpha/",
+      "schedule": ["at any time"],
+      "stabilityDays": 0
+    },
+    {
       "matchPackageNames": ["ts-jest", "@types/jest"],
       "groupName": "jest monorepo"
     },
