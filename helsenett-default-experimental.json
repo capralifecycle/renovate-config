@@ -62,6 +62,18 @@
       "major": {
         "automerge": false
       }
+    },
+    {
+      "packagePatterns": [
+        "^com.fasterxml.jackson."
+      ],
+      "groupName": "jackson packages",
+      "description": "Problematic dependency causing runtime errors",
+      "automerge": false,
+      "automergeType": "branch",
+      "major": {
+        "automerge": false
+      }
     }
   ]
 }
