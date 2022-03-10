@@ -51,7 +51,7 @@
         "^org.http4k:http4k-"
       ],
       "groupName": "http4k monorepo",
-      "automerge": false,
+      "automerge": true,
       "automergeType": "branch",
       "major": {
         "automerge": false
