@@ -6,10 +6,7 @@
     {
       "packageNames": [
         "no.fno.helsenett.libraries:types",
-        "no.fno.helsenett.libraries:env",
-        "no.fno.helsenett.libraries:properties",
-        "no.fno.helsenett.libraries:aws-properties",
-        "no.fno.helsenett.libraries:io"
+        "no.fno.helsenett.libraries:properties"
       ],
       "automerge": true,
       "automergeType": "branch",
