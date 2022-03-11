@@ -166,6 +166,11 @@
       "description": "Pin faker.js package to non-malicious version",
       "allowedVersions": "<= 5.5.3",
       "matchPackageNames": ["faker"]
+    },
+    {
+      "description": "Pin xlsx package to version that don't crash browser: out of memory",
+      "allowedVersions": "<= 0.18.0",
+      "matchPackageNames": ["xlsx"]
     }
   ],
   "pin": {
