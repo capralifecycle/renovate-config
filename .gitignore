@@ -1,3 +1,5 @@
 node_modules
 renovate-schema.json
 renovate-schema.json.bak
+
+.idea
