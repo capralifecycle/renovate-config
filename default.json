@@ -16,6 +16,13 @@
       "encrypted": {
         "password": "CNGypJyNpERqvFAe3F9wcneW5E9f8+VLYlOKsVhxyJPqyfTpUDjdM4QQt3SvCrrinSWLfeXRls8pU1ecjXqYVBrJt72nFtpJt20kBHNCpNHEYCuCuxDzbhTTEqqvMuHH31xvTh7uz3FnNNUqRBTlBoKndI/t+Tfe2clvliWvL+N1tw2GqyvniJ7JQ19kVbYbMac4ejO5cvYfE0No9xJTTULRzJRK4bJOqplPZvutPbrGKuzkjwTTrZ5QDAxxv/mbpzr0kC1R0KoSEz0JIDxy5YrdQm7I4RbP6zrHTt9PDTO6qwwBbpTeobAaAkM1dPNP13AGRozcj44QPwsEs8dBLg=="
       }
+    },
+    {
+      "hostType": "maven",
+      "baseUrl": "https://maven.pkg.github.com",
+      "encrypted": {
+        "token": "wcFMA/xDdHCJBTolAQ/+Mu6M//zQnYBKordq2MbW81IBz+xbkOJfSooNdzflOyZJQPP9Vig5lXroKOzI/aHTGTO4S3XVJ+h/h/yC7tTN92gGAN/EHrhszbgSJ2ijgBS4emqLG169GKuSRFKE3j2BKdN+EuzKcnjU7naTLArAlCKSCpFA2hV7257rh+vo6spC281ivTPm8WhOvSjI9lCupd3YJNN/17PqweQ16l9W7iZ4H0tZQwKC/4Y6CosPwmByQsYMKyzbMCcssXU7jK9DVJNGVFexuPyvI751Qjfd2+EAG8SM2sfJ4rmc+TxvFGqooSfTF+WucG+VywxPjL/a3EzSJ8yHMVnD+59fB91R4x6CxHuL2cCVJl7SZxfr3LvRIGGJFKu/AlO3hqWGpik2zDtmi8vhXmYrssqjrGaULrYZ9b0OX6yw63E5v730b009Lsb0arfWNB62nvXwSjJZWkwHCnl66Bn88xAPBw1vNJxCoi8ucVJDa5bVVW01IYs7mGlYrIYg6YmoGbnhpGRZqsbWQD2rl6fmlvrEuPpxwsssqUgCAYT/YSRHfSuVqkBJFg2w6Z9/ikfwAbqCId1OUQAyM1bHq8UXSaP2cTWo9h2Ug8JdK1/aa2GlDPDMu+1VSG+IXDAFdSPkGWX8lXeWsoI+BNuWMwhIXceghw4dum/UBuncKHrAC8CxFtNV01jSfQEcWzvKHgnHEFnFzxA6D7VKhx1WTrl2rySdIu+bL/LCXyCKDs255CU/R/m1jbxZaNLUUkMT05+SzetwV15ZxsGR19m5Lb7ue0Ie+n0+J3+fA0cmZttBPjx52kJQ+l3yete/FqZJpoWsHOoJyRRASVmBNMXx1qczy1W6OmRB"
+      }
     }
   ],
   "packageRules": [
