@@ -12,6 +12,7 @@
     "npmToken": "wcFMA/xDdHCJBTolAQ/8DKNpx3ZIraPmnkgXyELlz/X8ufsgyk/l4ESN6OP/PM6LLId2N1RLjUYGA6cXbJ8KHnrMi82T85bF0jHvBNe11tDQNfXzNNyjVKIOw3SMMBRhiICgw+o5lX6PNRTtYYq4YNRTeeRIJgM37pOrfljzzU+edis8N5J0i87UpFpngLMYYxA6eEdyhAWu7aeEtobIRCfFEiI/byTf6rReOtvZq456sWC6u/uboxU72A0KgDKSCxpB9hhqcKIOkVtZLoxOh7B5XOjMlDKHU3CY4I51SCFzNzkwWL7rVThI9G6tjY/+XhVy8N7pJIyOTVgPl3qVIbgvVnuob9dHUY9QTs853TaV/gsVFaB9dPhjn49gWHOdWUM8cmmYV3Lyr+R8Hns7DvNeYe/xVbhOHd5dn857BocvTyZw7zxVTFCsYQgU4mPG181ZJiNMlGfC7Zxcy3w6yEqdDBndJZeiD1xjPfToSJpct3l8+LKCcQZLadFOK0Q9FkwL+PY/psJYXYWXxOtbB2ld5JlslAGCj55oH2IwQ1sngRG1P35OSTZ3TcIPfS0s103gZwba7VPkWpx6nmr95Wc/S0v5VXdQpiKlZrZ0LMJakki0VIv6PVREOrTBqsXzt7jwDhc9yWjgVx9BzXnwy9JLkpLuOZxAfL1OHOrXUCslBI6pmI6GyH03st61hbvSfQE/dSDXJzhgzuqGi0Yiag7P8vJXHJB+TVHXfFBs43kxowTMaAHl+fixR6moCZa0eLOVgAcN3pcGqJU45IyMaT15JZB5oeui8EZxNVDwmolz8cIOM7jP8wV21CM5KRnixGgq3OJbBlNeBYVxU3yswp87gRZ6awjReYove8NS"
   },
   "npmrc": "registry=https://registry.npmjs.org/\n@capralifecycle:registry=https://npm.pkg.github.com\n//npm.pkg.github.com/:_authToken=${NPM_TOKEN}",
+  "npmrcMerge": true,
   "hostRules": [
     {
       "hostType": "maven",
