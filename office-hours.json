@@ -1,4 +1,4 @@
 {
   "extends": ["github>capraconsulting/renovate-config:default"],
-  "automergeSchedule": ["after 8am every weekday, before 10am every weekday"]
+  "automergeSchedule": ["after 8am every weekday", "before 10am every weekday"]
 }
