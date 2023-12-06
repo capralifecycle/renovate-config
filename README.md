@@ -36,3 +36,12 @@ For aggressive merging - using [`aggressive.json`](./aggressive.json):
 
 This will schedule at any time and automerge as much as possible,
 excluding major updates.
+
+For automerging only within office hours - using [`office-hours.json`](./office-hours.json):
+
+```json
+{
+  "extends": ["github>capraconsulting/renovate-config:office-hours"]
+}
+```
+
