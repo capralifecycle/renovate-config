@@ -2,6 +2,9 @@
   "name": "renovate-config",
   "version": "0.0.0-development",
   "description": "Renovate config presets for some Capra projects.",
+  "scripts": {
+    "prepare": "husky install"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/capraconsulting/renovate-config.git"
@@ -9,7 +12,10 @@
   "author": "Capra Consulting",
   "license": "Apache 2.0",
   "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
     "ajv-cli": "5.0.0",
-    "ajv-formats": "2.1.1"
+    "ajv-formats": "2.1.1",
+    "husky": "^8.0.3"
   }
 }

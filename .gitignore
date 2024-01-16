@@ -3,3 +3,5 @@ renovate-schema.json
 renovate-schema.json.bak
 
 .idea
+
+.husky/pre-commit
