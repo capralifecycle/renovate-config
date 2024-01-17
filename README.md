@@ -45,3 +45,16 @@ For automerging only within office hours - using [`office-hours.json`](./office-
 }
 ```
 
+## Validating configuration files
+
+To validate configuration files against the Renovate JSON Schema, run the `validate.sh`-script.
+
+```sh
+$ ./validate.sh
+Fetching latest JSON Schema
+Migrating schema to newer version
+saved migrated schema to renovate-schema.json
+Now validating..
+Validating aggressive.json
+...
+```
