@@ -178,6 +178,13 @@
       "description": "Pin xlsx package to version that don't crash browser: out of memory",
       "allowedVersions": "<= 0.18.0",
       "matchPackageNames": ["xlsx"]
+    },
+    {
+      "description": "Update github actions library at any time",
+      "matchPackageNames": ["capralifecycle/actions-lib"],
+      "enabledManagers": ["github-actions"],
+      "stabilityDays": 0,
+      "schedule": ["at any time"]
     }
   ],
   "pin": {
