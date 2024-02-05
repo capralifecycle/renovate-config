@@ -1,6 +1,6 @@
 {
   "extends": [
-    "github>capraconsulting/renovate-config:default",
+    "github>capralifecycle/renovate-config:default-base#ebo",
     ":pinOnlyDevDependencies"
   ],
   "lockFileMaintenance": {

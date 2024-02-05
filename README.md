@@ -14,7 +14,7 @@ For most code bases - using [`default.json`](./default.json):
 
 ```json
 {
-  "extends": ["github>capraconsulting/renovate-config:default"]
+  "extends": ["github>capralifecycle/renovate-config:default"]
 }
 ```
 
@@ -22,7 +22,7 @@ For libraries - using [`library.json`](./library.json):
 
 ```json
 {
-  "extends": ["github>capraconsulting/renovate-config:library"]
+  "extends": ["github>capralifecycle/renovate-config:library"]
 }
 ```
 
@@ -30,7 +30,7 @@ For aggressive merging - using [`aggressive.json`](./aggressive.json):
 
 ```json
 {
-  "extends": ["github>capraconsulting/renovate-config:aggressive"]
+  "extends": ["github>capralifecycle/renovate-config:aggressive"]
 }
 ```
 
@@ -41,7 +41,7 @@ For automerging only within office hours - using [`office-hours.json`](./office-
 
 ```json
 {
-  "extends": ["github>capraconsulting/renovate-config:office-hours"]
+  "extends": ["github>capralifecycle/renovate-config:office-hours"]
 }
 ```
 

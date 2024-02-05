@@ -25,8 +25,8 @@
     },
     {
       "packageNames": [
-        "@capraconsulting/sentry-utils-js",
-        "@capraconsulting/validation-utils-js",
+        "@capralifecycle/sentry-utils-js",
+        "@capralifecycle/validation-utils-js",
         "autoprefixer",
         "black",
         "flake8",
