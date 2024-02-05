@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "github>capralifecycle/renovate-config:default-base",
+    ":pinOnlyDevDependencies"
+  ],
+  "lockFileMaintenance": {
+    "automerge": true,
+    "automergeType": "branch"
+  }
+}

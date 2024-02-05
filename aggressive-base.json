@@ -1,0 +1,6 @@
+{
+  "extends": ["github>capralifecycle/renovate-config:default-base"],
+  "automerge": true,
+  "automergeType": "branch",
+  "schedule": ["at any time"]
+}

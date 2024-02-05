@@ -1,10 +1,6 @@
 {
   "extends": [
-    "github>capraconsulting/renovate-config:default",
-    ":pinOnlyDevDependencies"
-  ],
-  "lockFileMaintenance": {
-    "automerge": true,
-    "automergeType": "branch"
-  }
+    "github>capralifecycle/renovate-config:library-base",
+    "github>capralifecycle/renovate-config:with-credentials"
+  ]
 }
