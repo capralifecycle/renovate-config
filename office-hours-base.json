@@ -1,7 +1,6 @@
 {
   "extends": [
-    "github>capralifecycle/renovate-config:default-base",
-    "github>capralifecycle/renovate-config:with-credentials"
+    "github>capralifecycle/renovate-config:default-base"
   ],
   "automergeSchedule": ["after 8am and before 10am every weekday"]
 }

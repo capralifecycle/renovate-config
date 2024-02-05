@@ -1,7 +1,6 @@
 {
   "extends": [
     "github>capralifecycle/renovate-config:library-base",
-    "github>capralifecycle/renovate-config:with-credentials",
-    ":pinOnlyDevDependencies"
+    "github>capralifecycle/renovate-config:with-credentials"
   ]
 }
