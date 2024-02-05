@@ -1,6 +1,6 @@
 {
   "extends": [
-    "github>capralifecycle/renovate-config:aggressive-base#ebo",
-    "github>capralifecycle/renovate-config:with-credentials#ebo"
+    "github>capralifecycle/renovate-config:aggressive-base",
+    "github>capralifecycle/renovate-config:with-credentials"
   ]
 }

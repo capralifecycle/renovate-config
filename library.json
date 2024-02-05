@@ -1,7 +1,7 @@
 {
   "extends": [
-    "github>capralifecycle/renovate-config:library-base#ebo",
-    "github>capralifecycle/renovate-config:with-credentials#ebo",
+    "github>capralifecycle/renovate-config:library-base",
+    "github>capralifecycle/renovate-config:with-credentials",
     ":pinOnlyDevDependencies"
   ]
 }
