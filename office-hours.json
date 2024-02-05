@@ -1,4 +1,6 @@
 {
-  "extends": ["github>capraconsulting/renovate-config:default"],
-  "automergeSchedule": ["after 8am and before 10am every weekday"]
+  "extends": [
+    "github>capraconsulting/renovate-config:office-hours-base#ebo",
+    "github>capraconsulting/renovate-config:with-credentials#ebo"
+  ]
 }
