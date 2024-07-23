@@ -181,5 +181,6 @@
   "semanticCommits": "enabled",
   "stabilityDays": 3,
   "prNotPendingHours": 74,
-  "timezone": "Europe/Oslo"
+  "timezone": "Europe/Oslo",
+  "forkProcessing": "enabled"
 }
