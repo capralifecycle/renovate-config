@@ -3,7 +3,7 @@
   "version": "0.0.0-development",
   "description": "Renovate config presets for some Capra projects.",
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
