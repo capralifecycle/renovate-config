@@ -2,6 +2,7 @@
   "name": "renovate-config",
   "version": "0.0.0-development",
   "description": "Renovate config presets for some Capra projects.",
+  "type": "module",
   "scripts": {
     "prepare": "husky"
   },
