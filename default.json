@@ -116,10 +116,8 @@
     {
       "platform": "maven",
       "endpoint": "https://nexus.common-services.vydev.io",
-      "username": "renovate",
-      "encrypted": {
-        "password": "wcFMA/xDdHCJBTolAQ//RV23RSK14cw8KYK1KH/zrO97D8vbgdT16HJMkWUmiZxTs3GhgNAYPFwXO7LkZPKaGhjYDu/QRvTp20hs/IBJlRk1KxRd6rwgpm+hPfQstkmQ6WTK0pWhn7XT7jY8j+bOU/NYzSfNOLzrcwuBBlUkKG9pfnaDdVIO96G1BB5AQayK5AyGZsJbu5xc8i7dsY24Ztdz4KK1A/f9tVo8nuIY4SxOpAwO6qEyuubpAOwEr5OOiALQHkQgZ5lJJBCEqPEXyE7cj2XTVMFXPwJBwrWewu2Nsb4mkrXykcb1yEHXp4bogbA96s5g2AqKSFKzVgEne2Gd5GT6q9F+pTxsQCv8sl0SgSwO5PQihDGjMg+eQTGcptIpdXTW95dB3cKZ6U/IwGTj9nUvYqrF65ZNq1gNqrV7R+6GK/Yl3YSVSntBxbGqOjq5C+ggxgLjwAvUe0ttRblS13HT664WrrfqVq3DCWmIjmeky1Ad/ci9HyaQFtRcFNFN1OOFLw9AS+3P8TGp11hxWwfxl0XzqbJTEUeXxMH9nJoKYTD6TScQS3R1ErVzbuYziREsO1aZ0JEWZNnIRn+zT5Q3zE4XuOBufsyED2bi9lpje+9MSazRUFwhJSz0QeBupCZPQlB0snY/i5Sq6HnzKUaJZR3M/gzAvbEXH5AlLFymlGKcYMf4a5OnrT3SXwF37DUgPDgSDZJpY1sicRCpgBnIesVz3St3Ckv41mlNc1hgMH4nIhMTM+2UAEAqzqs1fuHtbqNMGK2ePuJht3xbFTI4l5N3+5VGdH+S2v6i1NW66oSTqJvgu1vyF2Ua"
-      }
+      "username": "github-actions-read",
+      "password": "{{ secrets.NEXUS_GHA_READ_USER }}"
     }
   ]
 }

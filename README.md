@@ -1,9 +1,7 @@
-# renovate-config
-
-[![Build Status](https://jenkins.capra.tv/buildStatus/icon?job=cals-internal/renovate-config/master)](https://jenkins.capra.tv/job/cals-internal/job/renovate-config/job/master/)
+# Renovate config for Vy
 
 [Renovate config presets](https://docs.renovatebot.com/config-presets/)
-for some Capra projects.
+for some Vy projects.
 
 See [Configuration Options](https://docs.renovatebot.com/configuration-options/)
 for a complete list of possible options.
