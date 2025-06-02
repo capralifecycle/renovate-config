@@ -14,17 +14,6 @@
   "packageRules": [
     {
       "packageNames": [
-        "boto3",
-        "aws-sdk"
-      ],
-      "packagePatterns": [
-        "^com.amazonaws:java-sdk-",
-        "^software.amazon.awssdk:"
-      ],
-      "extends": ["schedule:monthly"]
-    },
-    {
-      "packageNames": [
         "@capralifecycle/sentry-utils-js",
         "@capralifecycle/validation-utils-js",
         "autoprefixer",
