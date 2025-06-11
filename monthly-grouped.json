@@ -1,0 +1,7 @@
+
+{
+  "extends": [
+    "github>capralifecycle/renovate-config:monthly-grouped-base",
+    "github>capralifecycle/renovate-config:with-credentials"
+  ]
+}

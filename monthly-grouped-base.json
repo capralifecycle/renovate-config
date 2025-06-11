@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "config:best-practices",
+    "helpers:pinGitHubActionDigestsToSemver",
+    ":semanticCommits"
+  ],
+  "timezone": "Europe/Oslo",
+  "stabilityDays": 14,
+  "packageRules": [
+    {
+      "description": "Automerge all non-major updates monthly",
+      "extends": ["group:allNonMajor"],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "schedule": ["schedule:monthly"],
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "description": "Group all major updates into one monthly PR",
+      "matchUpdateTypes": ["major"],
+      "groupName": "Monthly major updates",
+      "groupSlug": "monthly-major",
+      "schedule": ["schedule:monthly"],
+      "automerge": false
+    }
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["schedule:monthly"]
+  }
+}
