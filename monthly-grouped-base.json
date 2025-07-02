@@ -9,23 +9,22 @@
   "packageRules": [
     {
       "description": "Automerge all non-major updates monthly",
-      "extends": ["group:allNonMajor"],
+      "extends": ["group:allNonMajor", "schedule:monthly"],
       "matchUpdateTypes": ["minor", "patch", "digest"],
-      "schedule": ["schedule:monthly"],
       "automerge": true,
       "automergeType": "branch"
     },
     {
       "description": "Group all major updates into one monthly PR",
+      "extends": ["schedule:monthly"],
       "matchUpdateTypes": ["major"],
       "groupName": "Monthly major updates",
       "groupSlug": "monthly-major",
-      "schedule": ["schedule:monthly"],
       "automerge": false
     }
   ],
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["schedule:monthly"]
+    "schedule": ["* 0-3 1 * *"]
   }
 }
