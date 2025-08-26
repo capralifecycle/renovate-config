@@ -1,0 +1,22 @@
+{
+  "description": "Group all minor/patch updates into one automerged commit, and all major updates into another PR",
+  "packageRules": [
+    {
+      "description": "Automerge all non-major updates",
+      "groupName": "all non-major dependencies",
+      "groupSlug": "monthly-minor-patch",
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
+      "description": "Group all major updates into one PR",
+      "groupName": "Major updates",
+      "groupSlug": "monthly-major",
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    }
+  ]
+}

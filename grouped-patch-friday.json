@@ -1,0 +1,17 @@
+{
+  "description": "Run every Friday morning, grouping minor and major updates separately",
+  "extends": [
+    "config:best-practices",
+    "helpers:pinGitHubActionDigestsToSemver",
+    ":semanticCommits",
+    "github>capralifecycle/renovate-config:group-minor-major"
+  ],
+  "timezone": "Europe/Oslo",
+  "minimumReleaseAge": "3 days",
+  "schedule": "* 5-13 * * 5",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "schedule": ["* 5-13 * * 5"]
+  }
+}
