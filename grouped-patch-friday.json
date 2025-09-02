@@ -1,10 +1,10 @@
 {
-  "description": "Run every Friday morning, grouping minor and major updates separately",
+  "description": "Run every Friday morning, automerging minor updates as a group",
   "extends": [
     "config:best-practices",
     "helpers:pinGitHubActionDigestsToSemver",
     ":semanticCommits",
-    "github>capralifecycle/renovate-config:group-minor-major"
+    "github>capralifecycle/renovate-config:group-minor"
   ],
   "timezone": "Europe/Oslo",
   "minimumReleaseAge": "3 days",
