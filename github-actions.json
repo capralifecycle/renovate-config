@@ -1,0 +1,25 @@
+{
+  "description": "Manages GitHub Actions updates",
+  "packageRules": [
+    {
+      "description": "Core GitHub Actions updates",
+      "groupSlug": "github-actions-core",
+      "matchPackageNames": [
+        "actions/cache",
+        "actions/checkout",
+        "actions/configure-pages",
+        "actions/deploy-pages",
+        "actions/download-artifact",
+        "actions/github-script",
+        "actions/setup-java",
+        "actions/setup-node",
+        "actions/setup-python",
+        "actions/upload-artifact",
+        "actions/upload-pages-artifact"
+      ],
+      "enabledManagers": ["github-actions"],
+      "automerge": true,
+      "automergeType": "branch"
+    }
+  ]
+}
