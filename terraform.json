@@ -1,0 +1,7 @@
+{
+  "description": "Configuration for Terraform modules",
+  "terraform": {
+    "ignorePaths": ["**/examples/**"],
+    "pinDigests": true
+  }
+}
