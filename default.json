@@ -1,6 +1,7 @@
 {
   "extends": [
     "github>capralifecycle/renovate-config:default-base",
-    "github>capralifecycle/renovate-config:with-credentials"
+    "github>capralifecycle/renovate-config:with-credentials",
+    "github>capralifecycle/renovate-config:terraform"
   ]
 }
