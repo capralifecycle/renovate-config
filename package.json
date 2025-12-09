@@ -13,8 +13,8 @@
   "author": "Capra Consulting",
   "license": "Apache 2.0",
   "devDependencies": {
-    "@commitlint/cli": "20.1.0",
-    "@commitlint/config-conventional": "20.0.0",
+    "@commitlint/cli": "20.2.0",
+    "@commitlint/config-conventional": "20.2.0",
     "ajv-cli": "5.0.0",
     "ajv-formats": "3.0.1",
     "husky": "9.1.7"
