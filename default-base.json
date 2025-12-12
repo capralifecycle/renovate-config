@@ -6,7 +6,8 @@
   ],
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["before 6am on tuesday"]
+    "schedule": ["before 6am on tuesday"],
+    "minimumReleaseAge": "0 days"
   },
   "major": {
     "automerge": false
