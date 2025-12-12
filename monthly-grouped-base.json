@@ -5,7 +5,7 @@
     ":semanticCommits"
   ],
   "timezone": "Europe/Oslo",
-  "stabilityDays": 14,
+  "minimumReleaseAge": "14 days",
   "packageRules": [
     {
       "description": "Automerge all non-major updates monthly",

@@ -135,7 +135,7 @@
         "^no\\.liflig(:|\\.)"
       ],
       "schedule": ["at any time"],
-      "stabilityDays": 0
+      "minimumReleaseAge": "0 days"
     },
     {
       "matchPackageNames": ["ts-jest", "@types/jest"],
@@ -160,7 +160,7 @@
       "description": "Update github actions library at any time",
       "matchPackageNames": ["capralifecycle/actions-lib"],
       "enabledManagers": ["github-actions"],
-      "stabilityDays": 0,
+      "minimumReleaseAge": "0 days",
       "schedule": ["at any time"]
     }
   ],
@@ -170,7 +170,7 @@
   "prCreation": "not-pending",
   "schedule": ["before 6am", "every weekend"],
   "semanticCommits": "enabled",
-  "stabilityDays": 3,
+  "minimumReleaseAge": "3 days",
   "prNotPendingHours": 74,
   "timezone": "Europe/Oslo"
 }
