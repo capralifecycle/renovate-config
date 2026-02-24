@@ -1,9 +1,9 @@
 # renovate-config
 
-![Validate](https://github.com/capraconsulting/renovate-config/workflows/Validate/badge.svg)
+![Validate](https://github.com/capralifecycle/renovate-config/workflows/Validate/badge.svg)
 
 [Renovate config presets](https://docs.renovatebot.com/config-presets/)
-for some Capra projects.
+for some Liflig projects.
 
 See [Configuration Options](https://docs.renovatebot.com/configuration-options/)
 for a complete list of possible options.
