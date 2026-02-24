@@ -1,7 +1,7 @@
 {
   "name": "renovate-config",
   "version": "0.0.0-development",
-  "description": "Renovate config presets for some Capra projects.",
+  "description": "Renovate config presets for Liflig projects.",
   "type": "module",
   "scripts": {
     "prepare": "husky"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/capralifecycle/renovate-config.git"
   },
-  "author": "Capra Consulting",
+  "author": "Liflig",
   "license": "Apache 2.0",
   "devDependencies": {
     "@commitlint/cli": "20.4.2",
