@@ -132,6 +132,7 @@
       "description": "Update internal deps at any time",
       "packagePatterns": [
         "^@capraconsulting/",
+        "^@capralifecycle/",
         "^@liflig/",
         "^no\\.liflig(:|\\.)"
       ],
