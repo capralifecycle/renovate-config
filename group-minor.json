@@ -2,13 +2,20 @@
   "description": "Group all minor/patch updates into one automerged commit",
   "packageRules": [
     {
-      "description": "Automerge all non-major updates",
-      "groupName": "all non-major dependencies",
-      "groupSlug": "minor-patch-group",
-      "matchPackageNames": ["*"],
+      "description": "Add to group for non-major updates that can be auto-merged",
       "matchUpdateTypes": ["minor", "patch", "digest", "pinDigest"],
-      "automerge": true,
-      "automergeType": "branch"
+      "groupName": "non-major dependency updates that can be auto-merged",
+      "groupSlug": "minor-patch-group",
+      "automerge": true
+    },
+    {
+      "description": "Add to group for non-major updates that cannot be auto-merged as datasource does not provide releaseTimestamp",
+      "matchUpdateTypes": ["minor", "patch", "digest", "pinDigest"],
+      "matchDatasources": ["docker", "java-version"],
+      "groupName": "non-major dependency updates that must be manually merged",
+      "groupSlug": "manual-minor-patch-group",
+      "minimumReleaseAge": null,
+      "automerge": false
     }
   ]
 }
