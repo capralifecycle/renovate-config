@@ -9,6 +9,7 @@
   "timezone": "Europe/Oslo",
   "minimumReleaseAge": "3 days",
   "schedule": "* 5-13 * * 5",
+  "automergeSchedule": "* 5-13 * * 5",
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true,
