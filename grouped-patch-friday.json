@@ -10,18 +10,12 @@
 
   "minimumReleaseAge": "3 days",
 
-  // Only allows branch creation on Saturday and Sunday. Avoids churn and
-  // makes sure all updates are prepared for Monday.
   "schedule": ["* * * * 0,6"],
 
-  // Disabled so Renovate controls automerge timing and respects automergeSchedule.
   "platformAutomerge": false,
 
-  // This is the default value. It allows rebasing and force pushing new versions to
-  // existing branches outside the `schedule`. Included here just documentating the behavior.
   "updateNotScheduled": true,
 
-  // Auto-merge in working hours on Mondays.
   "automergeSchedule": ["* 6-14 * * 1"],
 
   "lockFileMaintenance": {
