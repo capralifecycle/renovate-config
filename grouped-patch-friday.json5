@@ -28,5 +28,14 @@
     "enabled": true,
     "automerge": true,
     "schedule": ["* * * * 0,6"]
-  }
+  },
+  "packageRules": [
+    {
+      "description": "Lock file maintenance PRs do not have releaseTimestamp",
+      "matchUpdateTypes": [
+        "lockFileMaintenance"
+      ],
+      "minimumReleaseAge": null
+    }
+  ]
 }
