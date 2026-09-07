@@ -106,7 +106,7 @@
     "automerge": true
   },
   "prCreation": "not-pending",
-  "schedule": ["before 6am on Monday"],
+  "schedule": ["on Sunday", "before 6am on Monday"],
   "semanticCommits": "enabled",
   "stabilityDays": 3,
   "prNotPendingHours": 74,
