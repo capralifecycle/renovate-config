@@ -65,6 +65,31 @@ for external consumers):
 }
 ```
 
+## Team Infra: `team-infra-automerge`
+
+Team Infra's repos use one preset, [`team-infra-automerge`](./team-infra-automerge.json), instead of picking between
+`default`/`aggressive`/`library`/`office-hours` above. Unlike those, it has no external-consumer/`-base` split -
+Team Infra repos are all internal, so credentials are just extended directly. If CI passes, automerge - including
+major versions. Only the named exceptions (e.g. React majors) are excluded, documented as commented `packageRules`
+directly in the file itself.
+
+Terraform provider updates automerge like everything else here, but that assumes CI actually catches a bad plan -
+a repo using Terraform should have a
+[`terraform plan -detailed-exitcode`](https://developer.hashicorp.com/terraform/cli/commands/plan#detailed-exitcode)
+step running against Renovate-created PRs before relying on this. Until that check exists, keep Terraform automerge
+off in that repo's own local config OR use another preset.
+
+```json
+{
+  "extends": ["github>capralifecycle/renovate-config:team-infra-automerge"]
+}
+```
+
+## Other presets
+
+The presets above are unchanged and still used by many repos in and outside capralifecycle. They're independent of
+`team-infra-automerge` and won't be extended by it. New Team Infra repos should use `team-infra-automerge` instead.
+
 ## Validating configuration files
 
 To validate configuration files against the Renovate JSON Schema, run the `validate.sh`-script.

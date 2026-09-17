@@ -1,6 +1,6 @@
 {
   "extends": [
-    "github>capralifecycle/renovate-config:default"
+    "github>capralifecycle/renovate-config:team-infra-automerge"
   ],
   "automerge": true,
   "automergeType": "branch"
