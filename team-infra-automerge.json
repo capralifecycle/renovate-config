@@ -1,0 +1,190 @@
+{
+  "description": "Team Infra's single Renovate profile, replacing the preset chain used in other contexts. Policy: automerge once CI passes, including major versions. Only the named exceptions require manual review.",
+  "extends": [
+    "config:base",
+    "helpers:pinGitHubActionDigestsToSemver",
+    "customManagers:biomeVersions",
+    "github>capralifecycle/renovate-config:with-credentials"
+  ],
+  "terraform": {
+    "ignorePaths": ["**/examples/**"],
+    "pinDigests": true
+  },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 6am on tuesday"],
+    "automerge": true,
+    "automergeType": "branch",
+    "minimumReleaseAge": "0 days"
+  },
+  "automerge": true,
+  "automergeType": "branch",
+  "masterIssue": true,
+  "prCreation": "not-pending",
+  "schedule": ["at any time"],
+  "semanticCommits": "enabled",
+  "minimumReleaseAge": "3 days",
+  "prNotPendingHours": 74,
+  "timezone": "Europe/Oslo",
+  "packageRules": [
+    {
+      "description": "Pin devDependencies to exact versions instead of ranges, across every repo - not just libraries. Regular (prod) dependencies keep Renovate's default rangeStrategy.",
+      "matchDepTypes": ["devDependencies"],
+      "rangeStrategy": "pin"
+    },
+    {
+      "description": "React major versions need manual review before merging.",
+      "matchPackageNames": ["react", "react-dom"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    },
+    {
+      "description": "Group all minor/patch/digest updates that can be automerged into one PR, so automerge doesn't turn into a wall of single-dependency PRs.",
+      "matchUpdateTypes": ["minor", "patch", "digest", "pinDigest"],
+      "groupName": "non-major dependency updates that can be auto-merged",
+      "groupSlug": "minor-patch-group"
+    },
+    {
+      "description": "Docker and java-version datasources don't provide a releaseTimestamp, so Renovate can't apply the usual stability/age check before automerging. Group them separately and require manual merge.",
+      "matchUpdateTypes": ["minor", "patch", "digest", "pinDigest"],
+      "matchDatasources": ["docker", "java-version"],
+      "groupName": "non-major dependency updates that must be manually merged",
+      "groupSlug": "manual-minor-patch-group",
+      "minimumReleaseAge": null,
+      "automerge": false
+    },
+    {
+      "description": "Group core GitHub Actions into one PR so they don't each show up separately.",
+      "matchPackageNames": [
+        "actions/cache",
+        "actions/checkout",
+        "actions/configure-pages",
+        "actions/deploy-pages",
+        "actions/download-artifact",
+        "actions/github-script",
+        "actions/setup-java",
+        "actions/setup-node",
+        "actions/setup-python",
+        "actions/upload-artifact",
+        "actions/upload-pages-artifact"
+      ],
+      "enabledManagers": ["github-actions"],
+      "groupName": "github-actions-core"
+    },
+    {
+      "description": "Bundle all Node.js version references (.node-version/.nvmrc, package.json engines) into one PR, since Renovate tracks each as a separate manager by default - grouped, the whole bump is safe to automerge as one unit.",
+      "matchPackageNames": ["node"],
+      "groupName": "node"
+    },
+    {
+      "description": "Cap @types/node to the current Node major so its types don't drift ahead of the runtime. Bump this when the org's target Node LTS changes.",
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "^24"
+    },
+    {
+      "description": "Jackson packages release in lockstep - group them into one PR.",
+      "packagePatterns": ["^com.fasterxml.jackson."],
+      "groupName": "jackson packages"
+    },
+    {
+      "description": "Testcontainers modules release in lockstep - group them into one PR.",
+      "packagePatterns": ["^org.testcontainers."],
+      "groupName": "testcontainers packages"
+    },
+    {
+      "description": "kotlinx-serialization modules release in lockstep - group them into one PR.",
+      "packagePatterns": ["^org.jetbrains.kotlinx:kotlinx-serialization-"],
+      "groupName": "kotlinx-serialization packages"
+    },
+    {
+      "description": "AWS SDK for Java v2 is a monorepo - group its modules into one PR.",
+      "packagePatterns": ["^software.amazon.awssdk:"],
+      "groupName": "aws-sdk-java-v2 monorepo"
+    },
+    {
+      "description": "JUnit 5 modules release in lockstep - group them into one PR.",
+      "packagePatterns": [
+        "^org.junit.jupiter:",
+        "^org.junit.platform:",
+        "^org.junit.vintage:"
+      ],
+      "groupName": "junit5 packages"
+    },
+    {
+      "description": "http4k is a monorepo - group its modules into one PR.",
+      "packagePatterns": ["^org.http4k:http4k-"],
+      "groupName": "http4k monorepo"
+    },
+    {
+      "description": "jdbi3 modules release in lockstep - group them into one PR.",
+      "packagePatterns": ["^org.jdbi:jdbi3-"],
+      "groupName": "jdbi3 packages"
+    },
+    {
+      "description": "spek2 modules release in lockstep - group them into one PR.",
+      "packagePatterns": ["^org.spekframework.spek2:"],
+      "groupName": "spek2 packages"
+    },
+    {
+      "description": "Slack API Java client modules release in lockstep - group them into one PR.",
+      "packagePatterns": ["^com.slack.api:"],
+      "groupName": "slack api packages"
+    },
+    {
+      "description": "Kotlin compiler/plugin/stdlib modules release in lockstep - group them into one PR.",
+      "packagePatterns": [
+        "^org.jetbrains.kotlin:",
+        "^org.jetbrains.kotlin.\\w+:",
+        "^org.jetbrains.kotlin.plugin.\\w+:"
+      ],
+      "groupName": "kotlin packages"
+    },
+    {
+      "description": "Prevent inheriting any auto-merge of Kotlin minor versions to minimize compatibiliity issues",
+      "packagePatterns": [
+        "^org\\.jetbrains\\.kotlin:",
+        "^org\\.jetbrains\\.kotlin\\.\\w+:",
+        "^org\\.jetbrains\\.kotlin\\.plugin\\.\\w+:",
+        "^org\\.jetbrains\\.kotlinx:"
+      ],
+      "matchUpdateTypes": ["minor"],
+      "automerge": false
+    },
+    {
+      "description": "Avoid updates such as from 0.20.0 to 0.20.0-1.3.70-eap-274-2",
+      "packagePatterns": ["^org\\.jetbrains\\.kotlinx:"],
+      "versioning": "semver"
+    },
+    {
+      "description": "Skip the normal 3-day wait for internal libraries and capralifecycle/actions-lib.",
+      "packagePatterns": [
+        "^@capraconsulting/",
+        "^@capralifecycle/",
+        "^@liflig/",
+        "^no\\.liflig(:|\\.)",
+        "^capralifecycle/actions-lib$"
+      ],
+      "minimumReleaseAge": "0 days"
+    },
+    {
+      "description": "ts-jest and @types/jest release in lockstep - group them into one PR.",
+      "matchPackageNames": ["ts-jest", "@types/jest"],
+      "groupName": "jest monorepo"
+    },
+    {
+      "description": "Pin colors package to non-malicious version",
+      "allowedVersions": "<= 1.4.0",
+      "matchPackageNames": ["colors"]
+    },
+    {
+      "description": "Pin faker.js package to non-malicious version",
+      "allowedVersions": "<= 5.5.3",
+      "matchPackageNames": ["faker"]
+    },
+    {
+      "description": "Pin xlsx package to version that don't crash browser: out of memory",
+      "allowedVersions": "<= 0.18.0",
+      "matchPackageNames": ["xlsx"]
+    }
+  ]
+}
