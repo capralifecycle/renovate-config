@@ -65,6 +65,18 @@ for external consumers):
 }
 ```
 
+## npm `allow-remote` workaround
+
+[`with-credentials.json`](./with-credentials.json) sets `allow-remote=all` in the `.npmrc` Renovate uses for its own
+npm runs. npm 12 refuses registry tarballs of packages that declare `bundleDependencies` (for example `aws-cdk-lib`)
+when run with `--package-lock-only`, which is how Renovate updates lockfiles, so those updates fail with
+`EALLOWREMOTE` ([npm/cli#9800](https://github.com/npm/cli/issues/9800)). The setting does not affect installs outside
+Renovate.
+
+External consumers using the presets with the "base" suffix need to add `allow-remote=all` to their own `npmrc`.
+
+Remove the setting once an npm release containing the fix for npm/cli#9800 is the npm dist-tag `latest`.
+
 ## Validating configuration files
 
 To validate configuration files against the Renovate JSON Schema, run the `validate.sh`-script.
